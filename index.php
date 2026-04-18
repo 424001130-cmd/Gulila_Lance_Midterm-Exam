@@ -218,10 +218,7 @@ if ($action === 'dashboard' || $action === 'profile') {
     <!-- TODO 3: Hero Section -->
     <section class="hero-section text-center" id="home">
         <div class="container">
-            <div class="hero-avatar fade-in">
-                <?= strtoupper(substr($_SESSION['user_id'], 0, 1)) ?>
-            </div>
-            <h1 class="display-4 fw-bold mb-2 fade-in">
+            <!-- Avatar removed --><h1 class="display-4 fw-bold mb-2 fade-in">
                 <?= htmlspecialchars($_SESSION['user_id']) ?>
             </h1>
             <p class="lead mb-4 fade-in">Full Stack Student Developer</p>
@@ -313,13 +310,7 @@ if ($action === 'dashboard' || $action === 'profile') {
                 <!-- Gradient header -->
                 <div class="modal-header border-0 text-white text-center d-block py-4"
                      style="background: linear-gradient(135deg, #1a1a2e, #0f3460);">
-                    <div class="mx-auto mb-3 d-flex align-items-center justify-content-center fw-bold"
-                         style="width:80px;height:80px;border-radius:50%;font-size:2.2rem;
-                                background:linear-gradient(135deg,#408EC6,#1E2761);
-                                border:3px solid rgba(255,255,255,0.25);color:white;">
-                        <?= strtoupper(substr($_SESSION['user_id'], 0, 1)) ?>
-                    </div>
-                    <h5 class="modal-title fw-bold fs-4" id="aboutModalLabel">
+                    <!-- Avatar removed from modal --><h5 class="modal-title fw-bold fs-4" id="aboutModalLabel">
                         <?= htmlspecialchars($_SESSION['user_id']) ?>
                     </h5>
                     <p class="mb-0 opacity-75">Full Stack Student Developer</p>
